@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/prism.css">
     <link rel="icon" type="image/x-icon" href="media/logo.png">
     <script src="main.js" defer></script>
-    <title>Document</title>
+    <title>Rescript</title>
 </head>
 <body>
     <div class="container">
@@ -14,12 +18,12 @@
             <a href="index.html" class="logo"><img src="media/logo2.png" alt="logo"><p>Rescript</p></a>
             <nav>
                 <ul>
-                    <li><a href="#">punkt 1</a></li>
-                    <li><a href="#">punkt 2</a></li>
-                    <li><a href="#">punkt 3</a></li>
+                    <li class="option"><a href="#" class="link">Learn Rescript</a></li>
+                    <li class="option"><a href="#" class="link">Community</a></li>
+                    <li class="option"><a href="#" class="link">About</a></li>
                 </ul>
             </nav>
-            <a href="#"><button>button</button></a>
+            <a href="#"><button>Download</button></a>
         </header>
         <main>
             <div class="banner">
@@ -32,6 +36,31 @@
                 </div>
             </div>
         </main>
+        <section>
+            <h1>Use Rescript in private<br>and public projects </h1>
+        <p>Rescript is a great tool to create websites in HTML. It can be linked into your code with <i class="highlight"> 2 short lines of code</i>. The example is shown below: </p>
+        <div class="code-wrapper">
+        <pre>
+        <code id="code" class="language-html">
+&lt!doctype html&gt <br>
+&lthtml lang="en"&gt <br>
+  &lthead&gt <br>
+    &ltmeta charset="utf-8"&gt <br>
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt <br>
+    &lttitle&gtResrcipt demo&lt/title&gt <br>
+    &ltlink href="https://cdn.jsdelivr.net/npm/rescript@5.3.2/dist/css/rescript.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt <br>
+  &lt/head&gt <br>
+  &ltbody&gt <br>
+    &lth1&gtHello, world!&lt/h1&gt <br>
+    &ltscript src="https://cdn.jsdelivr.net/npm/rescript@5.3.2/dist/js/rescript.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"&gt&lt/script&gt <br>
+  &lt/body&gt <br>
+&lt/html&gt
+
+        </code>
+    </pre>
+</div>
+</section>
     </div>
 </body>
+<script src="css/prism.js"></script>
 </html>
