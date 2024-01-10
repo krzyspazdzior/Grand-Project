@@ -1,4 +1,4 @@
-li, a, button{
+header li,header a,header button{
     font-size: 16px;
     text-decoration: none;
     list-style: none;
@@ -7,8 +7,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0.5em 0;
-    border-bottom: 1px solid rgb(26, 26, 26)
+    border-bottom: 1px solid rgb(26, 26, 26);
 }
 .logo{
     display: flex;
@@ -21,8 +20,11 @@ header{
 .logo>img{
     height: 3em;
 }
-.option{
+header li{
+
     display: inline-block;
+}
+.option{
     padding: 0.9em 1.5em;
     transition: all 0.2s ease 0s;
     border-radius: 35px;
@@ -45,4 +47,7 @@ button:hover{
 .option:hover{
     background-color: #2e2e2e;
 }
-
+.activeSite{
+    color: rgb(250, 144, 13);
+    background-color: #ff7e0e4c;
+}

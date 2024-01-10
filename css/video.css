@@ -43,6 +43,7 @@ body:has(.banner-content:hover) .clip{
     padding: 0.5em 1em;
     border-radius: 50px;
     transition: 0.25s;
+    text-decoration: none;
 }
 .banner-content a:hover{
     background-color: white;
