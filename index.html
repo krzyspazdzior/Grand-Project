@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/video.css">
-    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/code-section.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/browser-section.css">
+    <link rel="stylesheet" href="css/new-section.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/x-icon" href="media/logo.png">
     <script src="main.js" defer></script>
@@ -38,62 +40,89 @@
                 </div>
             </div>
         </main>
-        <section>
+        <section class="code-section">
             <h1>Use Rescript in your<br>own websites and projects </h1>
         <p>Rescript is a great tool to create websites in HTML. Use library full of components and implement them into projects.<br>Rescript can be linked into your code with <i class="highlight"> 2 short lines of code</i>! The example is shown below: </p>
         <div class="code-wrapper">
-        <pre>
-        <code id="code" class="language-html">
-&lt!doctype html&gt <br>
-&lthtml lang="en"&gt <br>
-  &lthead&gt <br>
-    &ltmeta charset="utf-8"&gt <br>
-    &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt <br>
-    &lttitle&gtResrcipt demo&lt/title&gt <br>
-    &ltlink href="https://cdn.jsdelivr.net/npm/rescript@5.3.2/dist/css/rescript.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt <br>
-  &lt/head&gt <br>
-  &ltbody&gt <br>
-    &lth1&gtHello, world!&lt/h1&gt <br>
-    &ltscript src="https://cdn.jsdelivr.net/npm/rescript@5.3.2/dist/js/rescript.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"&gt&lt/script&gt <br>
-  &lt/body&gt <br>
-&lt/html&gt
+            <pre>
+                <code id="code" class="language-html">
+                    &lt!doctype html&gt <br>
+                &lthtml lang="en"&gt <br>
+                &lthead&gt <br>
+                    &ltmeta charset="utf-8"&gt <br>
+                    &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt <br>
+                    &lttitle&gtResrcipt demo&lt/title&gt <br>
+                    &ltlink href="https://cdn.jsdelivr.net/npm/rescript@5.3.2/dist/css/rescript.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt <br>
+                &lt/head&gt <br>
+                &ltbody&gt <br>
+                    &lth1&gtHello, world!&lt/h1&gt <br>
+                    &ltscript src="https://cdn.jsdelivr.net/npm/rescript@5.3.2/dist/js/rescript.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"&gt&lt/script&gt <br>
+                &lt/body&gt <br>
+                &lt/html&gt
 
-        </code>
-    </pre>
-</div>
-</section>
-        <footer>
-            <ul>
-                <h3>Learn Rescript</h3>
-                <li><a href="">Introduction</a></li>
-                <li><a href="">Installation</a></li>
-                <li><a href="">Importing Components</a></li>
-                <li><a href="">Designing Websites</a></li>
-            </ul>
-            <ul>
-                <h3>Community</h3>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Posts</a></li>
-                <li><a href="">Custom Libraries</a></li>
-                <li><a href="">Videos</a></li>
-            </ul>
-            <ul>
-                <h3>About Us</h3>
-                <li><a href="">Our Team</a></li>
-                <li><a href="">History and Timeline</a></li>
-                <li><a href="">Join our Team!</a></li>
-            </ul>
-            <div>
-                <h3>More</h3>
-                    <div class="icons">
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-discord"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="browser-section">
+        <h1>Works on every browser<br>and every platform!</h1>
+        <p>Rescript has been designed in a way to work in every browser and on every platform.<br>Using our library allows you to make your website as accesible as it possibly can.<br>Users are able to connect to our websites using <i class="highlight">Chrome, Firefox Safari Edge and many more.</i></p>
+        <div class="brow-art">
+            <article>
+                <footer>
+                    <img src="media/chrome.png" alt="chrome">
+                    <img src="media/firefox.png" alt="firefox">
+                    <img src="media/opera.png" alt="opera">
+                </footer>
+                <h1>Desktop website</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, tempore ab corporis neque quo voluptatibus necessitatibus ipsam, ducimus optio porro placeat nobis, doloribus sunt. Eos mollitia vitae exercitationem deleniti. Soluta magni ullam nam maxime dolor rem omnis recusandae! Id, tenetur?</p>
+                <div class="hover-text">Learn More >>></div>
+            </article>
+            <article>
+                <footer>
+                    <img src="media/safari.png" alt="safari">
+                    <img src="media/samsung.png" alt="samsung">
+                </footer>
+                <h1>Mobile website</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequatur asperiores reiciendis iusto, adipisci quod magni eum quos. Alias cumque in aliquid facere officia, sint assumenda ullam quos quas eum ab temporibus minima. Et illo unde id ipsum placeat optio?</p>
+            </article>
+        </div>
+    </section>
+    <section class="new-section">
+        <h1>Sample Text</h1>
+    </section>
+    <footer>
+        <ul>
+            <h3>Learn Rescript</h3>
+            <li><a href="">Introduction</a></li>
+            <li><a href="">Installation</a></li>
+            <li><a href="">Importing Components</a></li>
+            <li><a href="">Designing Websites</a></li>
+        </ul>
+        <ul>
+            <h3>Community</h3>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Posts</a></li>
+            <li><a href="">Custom Libraries</a></li>
+            <li><a href="">Videos</a></li>
+        </ul>
+        <ul>
+            <h3>About Us</h3>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">History and Timeline</a></li>
+            <li><a href="">Join our Team!</a></li>
+        </ul>
+        <div>
+            <h3>More</h3>
+                <div class="icons">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-discord"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
                 </div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+</div>
 </body>
 <script src="css/prism.js"></script>
 </html>

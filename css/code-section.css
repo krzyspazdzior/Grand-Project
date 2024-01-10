@@ -1,15 +1,14 @@
-.container>section{
+.container > section{
     display: flex;
-    background-color: rgb(20, 20, 20);
     justify-content: center;
     align-items: center;
-}
-section {
     display: flex;
     flex-direction: column;
     padding: 3em;
     text-align: center;
-
+}
+.code-section{
+    background-color: rgb(20, 20, 20);
 }
 section>h1{
     font-weight: 500;

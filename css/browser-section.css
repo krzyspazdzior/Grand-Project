@@ -1,0 +1,59 @@
+.browser-section{
+    background-color: #0c0c0c; 
+}
+.brow-art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    margin-top: 3.5em;
+}
+.brow-art>article{
+    display: flex;
+    padding: 3.5em 2.5em;
+    text-align: start;
+    height: 420px;
+    min-height: 300px;
+    min-width: 344; 
+    max-width: 600px; 
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 0.8em;
+}
+.brow-art>article:nth-child(1){
+    background-color: #1c1c1c;
+}
+.brow-art>article:nth-child(2) {
+    background-color: #edf0f1;
+}
+.brow-art>article:nth-child(2) *{
+    color: #23272f;
+}
+.brow-art h1{
+    font-weight: 500;
+    font-size: 2em;
+}
+.brow-art p{
+    font-weight: 300;
+}
+.brow-art footer{
+    display: flex;
+    gap: 0.5em;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.hover-text{
+    display: none;
+}
+.brow-art footer img{
+    height: 1.5em;
+    display: inline-block;
+}
+.brow-art>article:nth-child(1):hover{
+}
+.brow-art>article:nth-child(2):hover{
+    
+}
+body:has(.brow-art>article:nth-child(1):hover) .hover-text{
+    display: block;
+}
