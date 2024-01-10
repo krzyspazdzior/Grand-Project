@@ -35,7 +35,7 @@ body:has(.banner-content:hover) .clip{
     transform: translate(-50%, -50%);
 
     text-align: center;
-    font-size: 30px;
+    font-size: 1.85em;
 }
 .banner-content a{
     font-size: 20px;

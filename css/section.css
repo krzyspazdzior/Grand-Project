@@ -7,12 +7,11 @@
 section {
     display: flex;
     flex-direction: column;
-    
+    padding: 3em;
     text-align: center;
 
 }
 section>h1{
-    margin-top: 1.5em;
     font-weight: 500;
     font-size: 3em;
     line-height:1.4em;
@@ -24,8 +23,8 @@ section>h1{
 code{
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 600px;
+    height: 20vmax;
+    width: 60vmin;
 }
 code *{
     font-size: 13px;

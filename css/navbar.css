@@ -1,5 +1,5 @@
 header li,header a,header button{
-    font-size: 16px;
+    font-size: 1em;
     text-decoration: none;
     list-style: none;
 }
@@ -7,13 +7,13 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-bottom: 1px solid rgb(26, 26, 26);
+    border-bottom: 0.1em solid rgb(26, 26, 26);
 }
 .logo{
     display: flex;
     cursor: pointer;
     margin-right: auto;
-    font-size: 30px;
+    font-size: 1.9em;
     align-items: center;
     
 }
@@ -27,7 +27,7 @@ header li{
 .option{
     padding: 0.9em 1.5em;
     transition: all 0.2s ease 0s;
-    border-radius: 35px;
+    border-radius: 5em;
 }
 
 button{
@@ -35,7 +35,7 @@ button{
     margin: 0 1em;
     background-color: #7f4512;
     border: none;
-    border-radius: 50px;
+    border-radius: 5em;
     cursor: pointer;
     transition: all 0.1s ease 0s;
 }
