@@ -1,4 +1,6 @@
-.hamburger{
+
+
+.hamburger div{
     display: none;
     margin-right: 2em;
 }
@@ -19,4 +21,39 @@
   
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+  }
+
+.mobile-menu{
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+
+  @media only screen and (max-width: 900px) {
+    header nav {
+      display: none;
+    }
+    .hamburger div{
+        display: block;
+    }
+    header{
+      justify-content: center;
+    }
+    .logo{
+      flex-basis: 80%;
+    }
+  }
+
+
+  .active.active.active{
+    display: flex;
+  }
+
+  .mobile-menu:nth-child(4){
+    background-color: red;
   }
