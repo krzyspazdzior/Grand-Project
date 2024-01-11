@@ -16,7 +16,7 @@ main{
     display: block;
     border-radius: 5px;
     box-shadow: 0px 0px 30px 5px #000000;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     transition: all 0.15s ease 0s;
 }
@@ -33,17 +33,24 @@ body:has(.banner-content:hover) .clip{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
-    font-size: 1.85em;
+    font-size: 1.8em;
+    width: 80%;
 }
+
 .banner-content a{
-    font-size: 20px;
+    font-size: 1vw;
     border: 2px solid white;
-    padding: 0.5em 1em;
+    padding: 0.7vw 1.2vw;
     border-radius: 50px;
     transition: 0.25s;
     text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+    .banner-content>a{
+        font-size: 2.5vw;
+
+    }
 }
 .banner-content a:hover{
     background-color: white;
