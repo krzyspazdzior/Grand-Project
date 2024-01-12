@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300&display=swap');
 
+:root{
+    --white: #edf0f1;
+    --hardblack: #0c0c0c;
+    --softblack: #141414;;
+}
 
 * {
     box-sizing: border-box;

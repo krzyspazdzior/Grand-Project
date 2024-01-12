@@ -1,10 +1,4 @@
-//Clicking menu shows options
- function show() {
-   
- }
-
-
-//hamburger menu --> X menu
+//Rozwijanie menu
 function hamburgerToX(x) {
   x.classList.toggle("change");
   document.querySelector('.mobile-menu').classList.toggle('active');

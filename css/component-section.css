@@ -1,0 +1,65 @@
+.comp-section{
+    background-color: #141414;
+    gap: 3.5em;
+}
+.comp-section nav{
+    display: flex;
+    justify-content: space-around;
+}
+.comp-section nav *{
+    font-weight: 700;
+}
+.comp-section article{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1em 0 10em 0;
+    width: 700px;
+    min-width: 300px;
+    border-radius: 0.5em;
+    background: linear-gradient(333deg, rgba(47,47,51,1) 0%, rgba(25,32,40,1) 100%);
+}
+.comp-section h2{
+    letter-spacing: 0.4em;
+    color: #ffffff8e;
+    user-select: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.comp-section article ul{
+    display: flex;
+    gap: 2.7em;
+    list-style: none;
+}
+.comp-content{
+    display: flex;
+}
+.comp-content>p{
+    width: 300px;
+    text-align: start;
+}
+.comp-section li{
+    color: #ffffff79;
+    user-select: none;
+}
+.comp-section li:hover{
+    color: #ffffffb4;
+    cursor: pointer;
+}
+.comp-section img{
+    height: 3.5em;
+    display: block;
+    margin: 0.5em;
+}
+.products-area{
+    padding: 2em 2em 0 2em;
+}
+.products{
+    border: 1px solid #36373e;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    width: 100%;
+    transition: all 0.2s ease 0s;
+}
+.products:hover{
+    background-color: rgba(230, 230, 230, 0.528)
+}
