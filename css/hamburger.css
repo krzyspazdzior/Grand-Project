@@ -12,7 +12,9 @@
     margin: 6px 0;
     transition: 0.4s;
   }
-  
+  .comp-section .bar1,.comp-section .bar2,.comp-section .bar3 {
+    background-color: #edf0f188;
+  }
   .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
   }
@@ -46,6 +48,9 @@
     }
     .logo{
       flex-basis: 80%;
+    }
+    .comp-section.comp-section.comp-section ul{
+      display: none;
     }
   }
 

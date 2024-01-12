@@ -14,10 +14,12 @@
     flex-direction: column;
     height: auto;
     padding: 1em 0 10em 0;
-    width: 700px;
+    max-width: 700px;
     min-width: 300px;
+    width: 40vw;
     border-radius: 0.5em;
     background: linear-gradient(333deg, rgba(47,47,51,1) 0%, rgba(25,32,40,1) 100%);
+    box-shadow: 0px 0px 30px 8px black;
 }
 .comp-section h2{
     letter-spacing: 0.4em;
@@ -32,10 +34,16 @@
 }
 .comp-content{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
 }
 .comp-content>p{
-    width: 300px;
-    text-align: start;
+    max-width: 750px;
+    text-align: center;
+
+
 }
 .comp-section li{
     color: #ffffff79;
@@ -61,5 +69,9 @@
     transition: all 0.2s ease 0s;
 }
 .products:hover{
-    background-color: rgba(230, 230, 230, 0.528)
+    background-color: rgba(230, 230, 230, 0.528);
+    cursor: pointer;
+}
+.products p{
+    filter: opacity(0.6);
 }
