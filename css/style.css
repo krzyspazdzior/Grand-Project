@@ -3,15 +3,14 @@
 :root{
     --white: #edf0f1;
     --hardblack: #0c0c0c;
-    --softblack: #141414;;
+    --softblack: #141414;
 }
-
 * {
     box-sizing: border-box;
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
-    color: #edf0f1;
+    color: var(--white);
 
 }
 .container{

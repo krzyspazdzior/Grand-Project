@@ -24,7 +24,7 @@
     background-color: #1c1c1c;
 }
 .brow-art>article:nth-child(2) {
-    background-color: #edf0f1;
+    background-color: var(--white);
 }
 .brow-art>article:nth-child(2) *{
     color: #23272f;
