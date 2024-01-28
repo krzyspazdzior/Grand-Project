@@ -5,7 +5,7 @@
 .openButton {
     border: none;
     border-radius: 5px;
-    background-color: #1c87c9;
+    background-color: #fd570b;
     color: white;
     padding: 14px 20px;
     cursor: pointer;
@@ -39,16 +39,19 @@
     background: #eee;
     color: var(--hardblack);
   }
+  .formContainer textarea{
+    font-size: 12px;
+    resize: none;
+  }
   .formContainer input[type=text]:focus,
   .formContainer textarea:focus {
-    background-color: #c2c2c2;
-    outline: solid rgb(205, 96, 49) 1px;
+    background-color: #dadada;
+    outline: solid #8d8a8a 2px;
   }
-  .formContainer .btn {
-    padding: 12px 20px;
+  .formContainer .submit {
+    padding: 8px 0px 5px 0px;
     border: none;
-    background-color: rgb(35, 35, 35);
-    border: 2px solid whitesmoke;
+    background-color: var(--cool-orange);
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
@@ -57,8 +60,34 @@
     margin-bottom: 15px;
     opacity: 0.8;
   }
+  .formContainer  .submit:hover, .openButton:hover {
+    background-color: #ff6923;
+    
+  }
   .submit-cancel{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
+  }
+  .x-btn{
+    display: flex;
+    justify-content:space-between;
+  }
+  .x-btn .cancel{
+    justify-self: flex-end;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 50%;
+
+  }
+  .cancel:hover{
+    transform: scale(1.04);
+  }
+  .formContainer h2{
+    display: flex;
+    align-items: center;
+  }
+  input[type=file]{
+    margin-bottom: 2em;
+    align-self: flex-start;
   }
