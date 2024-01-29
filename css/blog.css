@@ -5,3 +5,7 @@ main{
     justify-content: center;
     text-align: center;
 }
+.blog-area{
+    display: grid;
+    
+}
