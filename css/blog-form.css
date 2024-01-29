@@ -79,11 +79,11 @@
     justify-self: flex-end;
     color: white;
     padding: 10px 14px;
-    border-radius: 50%;
 
   }
-  .cancel:hover{
+  .formContainer i:hover{
     transform: scale(1.04);
+    cursor: pointer;
   }
   .formContainer h2{
     display: flex;
