@@ -43,13 +43,18 @@
             </nav>
         </header>
         <main>
-            <h1>Blog Posts</h1>
+            <div class="subpage-info">
+                <i class="bi bi-caret-right"></i>
+                Community 
+            </div>
+            <h1>Rescript Blog Posts</h1>
             <div class="openBtn">
-                <button class="openButton" onclick="openForm()"><strong>Create Post</strong></button>
+                <button class="openButton" onclick="openForm()"><strong>Create Post <i class="bi bi-pencil-square"></i></strong></button>
               </div>
               <div class="loginPopup">
-                <div class="formPopup" id="popupForm">
-                  <form action="../css/blog.php" class="formContainer" method="post">
+                  <div class="formPopup" id="popupForm">
+                      <form action="../css/blog.php" class="formContainer" method="post">
+                      <div class="bg-blur"></div>
                     <div class="x-btn">
                         <h2>Create Post</h2>
                         <div type="button" class="btn cancel" onclick="closeForm()"><h1><i class="bi bi-x"></i></h1></div>
@@ -65,6 +70,22 @@
                     <input type="file" accept="image/png, image/jpeg" name="photo"><br>
                         <input type="submit" class="btn submit" value="Add Post"></input>
                   </form>
+                </div>
+              </div>
+              <div class="blog-area">
+                <div class="blog-post">
+                    <h2>Sample Post 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestias accusantium eius facilis praesentium magni unde error quasi rerum. Obcaecati eum odit blanditiis aliquid sunt! Tempora rem debitis delectus aut, nihil distinctio tenetur veniam, quos nesciunt nobis minus saepe? Natus assumenda, minima temporibus sunt quidem velit similique nesciunt delectus modi omnis at rerum nam non illo, esse enim libero harum?</p>
+                    <footer>
+                        Read More >>
+                    </footer>
+                </div>
+                <div class="blog-post">
+                    <h2>Sample Post 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestias accusantium eius facilis praesentium magni unde error quasi rerum. Obcaecati eum odit blanditiis aliquid sunt! Tempora rem debitis delectus aut, nihil distinctio tenetur veniam, quos nesciunt nobis minus saepe? Natus assumenda, minima temporibus sunt quidem velit similique nesciunt delectus modi omnis at rerum nam non illo, esse enim libero harum?</p>
+                <footer>
+                    Read More >>
+                </footer>
                 </div>
               </div>
         </main>

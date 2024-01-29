@@ -1,6 +1,6 @@
 .openBtn {
   display: flex;
-  justify-content: center;
+  margin-bottom: 18px;
 }
 .openButton {
     border: none;
@@ -17,6 +17,7 @@
     width: 100%;
   }
   .formPopup {
+    z-index: 10;
     display: none;
     position: fixed;
     left: 50%;
@@ -28,7 +29,7 @@
   .formContainer {
     max-width: 550px;
     padding: 25px;
-    background-color: #161616;
+    background-color: #0f0f0f;
   }
   .formContainer input[type=text],
   .formContainer textarea{
@@ -36,8 +37,9 @@
     padding: 15px;
     margin: 5px 0 20px 0;
     border: none;
-    background: #eee;
+    background: var(--white);
     color: var(--hardblack);
+    border-radius: 5px;
   }
   .formContainer textarea{
     font-size: 12px;
@@ -46,7 +48,7 @@
   .formContainer input[type=text]:focus,
   .formContainer textarea:focus {
     background-color: #dadada;
-    outline: solid #8d8a8a 2px;
+    outline: solid #ff5500 2.5px;
   }
   .formContainer .submit {
     padding: 8px 0px 5px 0px;
@@ -90,4 +92,14 @@
   input[type=file]{
     margin-bottom: 2em;
     align-self: flex-start;
+  }
+  .bg-blur{
+    z-index: -1;
+    position:fixed;
+    left: -1000px;
+    top: -1000px;
+    width: 5000px;
+    height: 5000px;
+    background-color: black;
+    opacity: 0.9;
   }

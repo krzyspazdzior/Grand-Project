@@ -1,7 +1,38 @@
 main{
     display: flex;
-    width: 100%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
 }
+h1{
+    margin-bottom: 30px;
+}
+.blog-area{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+.blog-post{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: start;
+    border:1px solid rgb(53, 53, 53);
+    border-radius: 10px;
+    height: fit-content;
+    padding: 2em;
+
+
+}
+.blog-post footer{
+    color: rgb(255, 150, 112);
+}
+.subpage-info{
+    color: rgb(255, 150, 112);
+    height: 2.5em;
+}
+

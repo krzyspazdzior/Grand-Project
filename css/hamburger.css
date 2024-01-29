@@ -26,6 +26,9 @@
   }
 
 .mobile-menu{
+  background-color: var(--hardblack);
+
+  z-index: 10;
   text-align: center;
   display: none;
   flex-direction: column;
