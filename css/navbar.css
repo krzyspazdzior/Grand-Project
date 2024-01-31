@@ -12,9 +12,10 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 5.5em;
+    height: 88px;
     padding: 0 1em;
     background-color: var(--hardblack);
+    border-bottom: 0px solid rgb(41, 41, 41);
 }
 header nav{
     display: flex;
@@ -73,3 +74,13 @@ nav button:hover{
 .activeSite.activeSite.activeSite{
     background-color: var(--cool-orange);
 }
+nav p{
+    width: max-content;
+}
+
+html:not([data-scroll='0']) header {
+    border-bottom: 1px solid rgb(33, 33, 33);
+    height: 89px;
+    box-shadow: 0px 0px 15px 10px rgb(14, 14, 14);
+    transition: all 0.1s ease 0s;
+  }

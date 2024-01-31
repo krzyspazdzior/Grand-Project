@@ -1,5 +1,10 @@
 <?php
 
 ob_start();
-header('Location: ');
+
+$title = $_POST["title"];
+$content = $_POST["content"];
+
+
+
 ?>

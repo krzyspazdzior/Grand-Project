@@ -1,8 +1,11 @@
-
+.hamburger{
+  margin: 0 2em;
+}
 
 .hamburger div{
     display: none;
-    margin-right: 2em;
+    
+    
 }
 
 .bar1, .bar2, .bar3 {
@@ -27,7 +30,7 @@
 
 .mobile-menu{
   background-color: var(--hardblack);
-
+  width: 100%;
   z-index: 10;
   text-align: center;
   display: none;
@@ -35,11 +38,11 @@
   gap: 1.5em;
   justify-content: center;
   align-items: center;
-  padding: 1.5em 0;
+  padding: 1.5em 10em;
 }
 
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1055px) {
     header nav {
       display: none;
     }
@@ -47,7 +50,7 @@
         display: block;
     }
     header{
-      justify-content: center;
+      padding: 0;
     }
     .logo{
       flex-basis: 80%;
