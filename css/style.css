@@ -5,6 +5,7 @@
     --hardblack: #0c0c0c;
     --softblack: #141414;
     --cool-orange: #fd570b;
+    --select: #2e2e2e;
 }
 * {
     box-sizing: border-box;
@@ -13,6 +14,9 @@
     padding: 0;
     color: var(--white);
 
+}
+html, body{
+    width: 100%;
 }
 .container{
     width: 100%;

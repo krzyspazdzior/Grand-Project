@@ -4,13 +4,28 @@ header li,header a,header button{
     list-style: none;
 }
 header{
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 5.5em;
     padding: 0 1em;
+    background-color: var(--hardblack);
+}
+header nav{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    
+}
+header ul{
+    display: flex;
+    align-items: center;
+    gap: 2em;
 }
 .logo{
     display: flex;
@@ -29,23 +44,27 @@ header nav li{
     display: inline-block;
 }
 .option{
+    display: flex;
+    gap: 0.4em;
     padding: 0.9em 1.5em;
     transition: all 0.2s ease 0s;
     border-radius: 5em;
 }
 
 nav button{
+    display: flex;
+    gap: 0.4em;
     padding: 0.9em 2.2em;
     margin: 0 1em;
-    background-color: #d55929;
+    background-color: var(--select);
     border: none;
     border-radius: 5em;
     cursor: pointer;
-    transition: all 0.1s ease 0s;
+    transition: all 0.2s ease 0s;
 }
 nav button:hover{
-    background-color: #ff5500;
-    box-shadow: 0px 0px 15px 5px hsl(19, 88%, 59%);
+    background-color: #f88b55;
+    box-shadow: 0px 0px 10px 3px hsl(19, 50%, 52%);
 
 }
 .option:hover{
