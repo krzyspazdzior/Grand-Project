@@ -1,10 +1,10 @@
 <?php
 
-ob_start();
+// ob_start();
 
-$title = $_POST["title"];
-$content = $_POST["content"];
+// $title = $_POST["title"];
+// $content = $_POST["content"];
 
 
 
-?>
+?> 

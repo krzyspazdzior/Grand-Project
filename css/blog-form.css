@@ -47,7 +47,7 @@
     background-color: #dadada;
     outline: solid #ff5500 2.5px;
   }
-  .formContainer .submit {
+  .formContainer .submitButton {
     padding: 8px 0px 5px 0px;
     border: none;
     background-color: var(--cool-orange);
@@ -78,8 +78,10 @@
     padding: 10px 14px;
 
   }
+  .formContainer i{
+    padding: 0;
+  }
   .formContainer i:hover{
-    transform: scale(1.04);
     cursor: pointer;
   }
   .formContainer h2{
