@@ -1,3 +1,8 @@
+<?php
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +16,6 @@
     <link rel="stylesheet" href="../css/blog-form.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/x-icon" href="../media/logo.png">
-    <script src="../main.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/x-icon" href="../media/logo.png">
     <script src="../main.js" defer></script>
@@ -33,12 +37,12 @@
 
                 const newH2 = document.createElement("h2");
                 newDiv.appendChild(newH2);
-                newH2.textContent = 'Sample Post ADDED';
+                newH2.textContent = 'AJAX POST';
 
 
                 const newPara = document.createElement("p");
                 newDiv.appendChild(newPara);
-                newPara.textContent = 'Lorem Ipsum';
+                newPara.textContent = 'Ajax post content';
                 
             });
         });
