@@ -9,15 +9,40 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/blog-form.css">
-    <script src="../css/blog.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/x-icon" href="../media/logo.png">
     <script src="../main.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="icon" type="image/x-icon" href="media/logo.png">
+    <link rel="icon" type="image/x-icon" href="../media/logo.png">
     <script src="../main.js" defer></script>
     <script src="../blog.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <title>Community | Rescript</title>
+    <script>
+        $(document).ready(function(){
+            $("form").submit(function(event) {
+                event.preventDefault();
+                console.log("Form submitted");
+                var title = $("#form-title").val();
+                var content = $("#form-content").val();
+                var file = $("#form-file").val();
+                
+                const newDiv = document.createElement("div");
+                newDiv.classList.add('blog-post');
+                postsArea.appendChild(newDiv);
+
+                const newH2 = document.createElement("h2");
+                newDiv.appendChild(newH2);
+                newH2.textContent = 'Sample Post ADDED';
+
+
+                const newPara = document.createElement("p");
+                newDiv.appendChild(newPara);
+                newPara.textContent = 'Lorem Ipsum';
+                
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -46,7 +71,7 @@
         <main>
             <div class="loginPopup">
                 <div class="formPopup" id="popupForm">
-                    <form action="" class="formContainer" method="">
+                    <form action="community.php" class="formContainer" method="POST">
                         <div class="bg-blur"></div>
                         <div class="x-btn">
                             <h2>Create Post</h2>
@@ -55,12 +80,12 @@
                         <label for="Title">
                             Title
                         </label>
-                        <input type="text" id="title" name="title" required>
+                        <input type="text" id="form-title" name="title" required>
                         <label for="content">
                             Content
                         </label>
-                        <textarea name="content" id="content" cols="30" rows="10" required></textarea>
-                        <input type="file" accept="image/png, image/jpeg" name="photo"><br>
+                        <textarea name="content" id="form-content" cols="30" rows="10" required></textarea>
+                        <input type="file" id="form-file" accept="image/png, image/jpeg" name="photo"><br>
                         <input type="submit" value="Create" class="submitButton"></input>
                     </form>
                 </div>
